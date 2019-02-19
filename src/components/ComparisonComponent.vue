@@ -191,7 +191,7 @@ export default class ComparisonComponent extends Vue {
     'W amerykańskim stanie Ohio prawnie zakazano upajanie ryb alkoholem',
   ];
   private firstItemsGetFinished = false;
-  private fatalErrorString: string = '';
+  private fatalErrorString = '';
   private analiseDialog = {
     opened: false,
     loading: true,
@@ -239,10 +239,9 @@ export default class ComparisonComponent extends Vue {
   private items: FileItem[] = [];
   private sourceAItems: FileItem[] = [];
   private sourceBItems: FileItem[] = [];
-
   private strategies: string[] = [];
 
-  private latexCode: string = '';
+  private latexCode = '';
 
   private openDeleteDialog(fileName: string) {
     this.deleteDialog.opened = true;
